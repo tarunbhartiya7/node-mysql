@@ -1,0 +1,29 @@
+GET http://localhost:3000/api/products/
+
+###
+
+GET http://localhost:3000/api/products/17292
+
+###
+
+POST http://localhost:3000/api/products/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTY2MzY2NzYzOSwiZXhwIjoxNjYzNjczNjM5fQ.O77mSMLBzDsj5D-qXjrjkT_Xfn2UarSEtsJjEaZcojA
+
+{
+    "product_i18n_id": 17940,
+    "product_id": 223,
+    "name": "Rastentraktor"
+
+}
+
+###
+
+PUT http://localhost:3000/api/products/17292
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOjEsImlhdCI6MTY2MzY2MTE2MiwiZXhwIjoxNjYzNjY3MTYyfQ.FN5EEGhHMFWEczImbXRF1lbsfzPu9ejNnYwWTJuDntQ
+
+{
+  "name": "Schlaganker"
+}
+
